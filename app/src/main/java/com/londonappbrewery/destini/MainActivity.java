@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
         mStorySelected = newStory;
 
     }
-
+	@Override
     protected void onSaveInstanceState (Bundle outState){
         super.onSaveInstanceState(outState);;
         outState.putSerializable("StoryKey", (Serializable) mStorySelected);
